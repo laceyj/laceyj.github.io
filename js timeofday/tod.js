@@ -4,9 +4,11 @@ var greeting;
 var currentMin = today.getMinutes();
 var currentTime = currentHour + ":" + currentMin;
 
-if (currentHour >= 18) {
+if (currentHour >= 20) {
+    greeting = 'good night!';
+} else if (currentHour >= 18) {
     greeting = 'good evening!';
-} else if (currentHour > 12) {
+} else if (currentHour >= 12) {
     greeting = 'good afternoon!';
 } else if (currentHour > 0) {
     greeting = 'good morning!';
